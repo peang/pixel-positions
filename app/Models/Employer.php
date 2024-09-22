@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Employer extends Model
 {
+    protected $fillable = [
+        'name',
+        'logo',
+    ];
+
     use HasFactory;
 
     public function user()
